@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from Data.DataBase.DataBase.database.DataBase import Information
 from sqlalchemy import create_engine, select
 
+
 class Article(object):
     """Класс для обработки статей"""
 
@@ -54,13 +55,19 @@ class Article(object):
 
     def select_article(self, title: str) -> str:
         """Возвращает строку основного текста"""
+        try:
+            article = self.getArticle(title)
+            if not os.path.isfile(article.text_link_on_file):
+                return "Нет файла с таким именем"
+            return self.__get_text(article.text_link_on_file)
+        except AttributeError:
+            return "Такой записи еще нет"
+
+    def getArticle(self, title: str):
         article = self.__session.scalar(select(Information).where(Information.title_article == title))
-        print(article.text_link_on_file)
-        if not os.path.isfile(article.text_link_on_file):
-            raise FileNotFoundError("Нет файла с таким именем")
-        return self.__get_text(article.text_link_on_file)
+        return article
 
     def __get_text(self, name_file: str) -> str:
         with open(name_file, "r+", encoding="utf-8") as file:
             text = file.readlines()
-            return "\n".join(text)
+            return "".join(text)

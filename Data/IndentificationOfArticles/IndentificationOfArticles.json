@@ -1,3 +1,11 @@
 {
-  "институционализм": "institutionalism"
+  "институционализм": "institutionalism",
+  "Функциональная теория денег": "FunctionalTheoryOfMoney",
+  "Информационная": "InformationTheoryOfMoney",
+  "Марксистская": "MarxistTheoryOfMoney",
+  "Теория о металлических": "MetallisticTheoryOfMoney",
+  "Номиналистическая": "NominalisticTheoryOfMoney",
+  "Количественная" : "QuantitativeTheoryOfMoney",
+  "Кейнсианская": "TheKeynesianTheoryOfMoney",
+  "Государственная": "TheStateTheoryOfMoney"
 }

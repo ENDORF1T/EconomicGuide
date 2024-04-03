@@ -1,3 +1,6 @@
+import Core.IdentificationOfArticles.IdentificationMessages
+import Data.IndentificationOfArticles.IndentificateArticle
+
 import Data.Config as config
 import asyncio
 import logging

@@ -53,15 +53,15 @@ class Article(object):
         self.__session.add(article)
         self.__session.commit()
 
-    def select_article(self, title: str) -> str:
+    def select_article(self, title: str) -> (str, str):
         """Возвращает строку основного текста"""
         try:
             article = self.getArticle(title)
             if not os.path.isfile(article.text_link_on_file):
-                return "Нет файла с таким именем"
-            return self.__get_text(article.text_link_on_file)
+                return "Нет файла с таким именем", None
+            return self.__get_text(article.text_link_on_file), article.link_on_photo
         except AttributeError:
-            return "Такой записи еще нет"
+            return "Такой записи еще нет", None
 
     def getArticle(self, title: str):
         article = self.__session.scalar(select(Information).where(Information.title_article == title))

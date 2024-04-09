@@ -1,5 +1,4 @@
 {
-  "институционализм": "institutionalism",
   "Функциональная теория денег": "FunctionalTheoryOfMoney",
   "Информационная": "InformationTheoryOfMoney",
   "Марксистская": "MarxistTheoryOfMoney",
@@ -7,5 +6,24 @@
   "Номиналистическая": "NominalisticTheoryOfMoney",
   "Количественная" : "QuantitativeTheoryOfMoney",
   "Кейнсианская": "TheKeynesianTheoryOfMoney",
-  "Государственная": "TheStateTheoryOfMoney"
+  "Государственная": "TheStateTheoryOfMoney",
+  "Джон Мейнард Кейнс": "KeynesJM",
+  "Пол Самуэльсон": "SamuelsonP",
+  "Джеймс Тобин": "TobinJ",
+  "Милтон Фридман" : "FriedmanM",
+  "Кеннет Эрроу" : "ArrowK",
+  "Джордж Сельгин": "SelginG",
+  "Джозеф Шумпетер": "SchumpeterJ",
+  "Джордж Акерлофф": "AkerloffG",
+  "Джозеф Стиглиц": "StiglitzJ",
+  "Дэвид Хьюм": "DavidHume",
+  "Дэвид Рикардо": "DavidRicardo",
+  "Фридрих Энгельс": "FriedrichEngels",
+  "Фридрих фон Хайек": "FriedrichVonHayek",
+  "Ирвинг Фишер": "IrvingFisher",
+  "Джон Локк": "JohnLocke",
+  "Джон Стюарт Милль": "JohnStuartMill",
+  "Карл Маркс": "KarlMarx",
+  "Карл Менгер": "KarlMenger",
+  "Людвиг фон Мизес": "LudwigVonMises"
 }

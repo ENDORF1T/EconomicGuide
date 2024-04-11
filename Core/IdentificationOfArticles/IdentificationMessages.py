@@ -54,3 +54,7 @@ async def SendMessage(message: Message, article: Article):
             DebugLog("Photo does't exist")
             await config.bot.send_message(message_thread_id=message.message_thread_id, chat_id=message.chat.id,
                                           text="Произошла ошибка в отправлении")
+        except Exception:
+            DebugLog("Something goes wrong")
+            await config.bot.send_message(message_thread_id=message.message_thread_id, chat_id=message.chat.id,
+                                          text="Произошла ошибка в отправлении")
